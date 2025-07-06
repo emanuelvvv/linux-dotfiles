@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-echo "Installing..."
-
 config_dir="$HOME/.config"
 repo_dir="$(pwd)"
 
@@ -12,23 +10,23 @@ for dir in dunst fastfetch hypr kitty rofi waybar; do
 done
 
 # Dunstrc
-ln -sf "$repo_dir/dunst/dunstrc"      "$config_dir/dunst/dunstrc"
+ln -sf "$repo_dir/settings/dunst/dunstrc"      "$config_dir/dunst/dunstrc"
 
 # Fastfetch
-ln -sf "$repo_dir/fastfetch/config.jsonc"       "$config_dir/fastfetch/config.jsonc"
+ln -sf "$repo_dir/settings/fastfetch/config.jsonc"       "$config_dir/fastfetch/config.jsonc"
 
 # Hyprland
-ln -sf "$repo_dir/hypr/hyprland.conf"       "$config_dir/hypr/hyprland.conf"
-ln -sf "$repo_dir/hypr/hyprpaper.conf"      "$config_dir/hypr/hyprpaper.conf"
+ln -sf "$repo_dir/settings/hyprland/hyprland.conf"       "$config_dir/hypr/hyprland.conf"
+ln -sf "$repo_dir/settings/hyprland/hyprpaper.conf"      "$config_dir/hypr/hyprpaper.conf"
 
 # Kitty
-ln -sf "$repo_dir/kitty/kitty.conf"     "$config_dir/kitty/kitty.conf"
+ln -sf "$repo_dir/settings/kitty/kitty.conf"     "$config_dir/kitty/kitty.conf"
 
 # Rofi
-ln -sf "$repo_dir/rofi/rofi.rasi"       "$config_dir/rofi/rofi.rasi"
+ln -sf "$repo_dir/settings/rofi/config.rasi"       "$config_dir/rofi/config.rasi"
 
 # Waybar
-ln -sf "$repo_dir/waybar/config"       "$config_dir/waybar/config"
-ln -sf "$repo_dir/waybar/style.css"       "$config_dir/waybar/style.css"
+ln -sf "$repo_dir/settings/waybar/config"       "$config_dir/waybar/config"
+ln -sf "$repo_dir/settings/waybar/style.css"       "$config_dir/waybar/style.css"
 
-echo "Done!"
+echo "Done."
