@@ -1,1 +1,7 @@
+@theme "~/Documents/dotfiles/settings/rofi/spotlight-dark.rasi"
 
+configuration {
+	show-icons: true;
+	sort: false;
+	lines: 5;
+}
