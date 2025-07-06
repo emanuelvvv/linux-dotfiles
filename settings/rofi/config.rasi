@@ -1,4 +1,4 @@
-@theme "~/Documents/dotfiles/settings/rofi/spotlight-dark.rasi"
+@theme "~/Documents/linux-dotfiles/settings/rofi/spotlight-dark.rasi"
 
 configuration {
 	show-icons: true;
