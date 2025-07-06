@@ -1,0 +1,70 @@
+{
+    // "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "margin-top": 10,
+    "margin-left": 20,
+    "margin-right": 20,
+    "spacing": 20, // Gaps between modules (px)
+
+    // Choose the order of the modules
+    "modules-left": ["custom/launcher", "cpu", "temperature", "memory"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "network", "battery", "clock"],
+
+    // Left modules configuration
+    "custom/launcher": {
+	    "format": "󰣇 <span color = '#adadad'></span>",
+	    "on-click": "rofi -show drun"
+    },
+    
+    "cpu": {
+        "format": "   {usage}%"
+    },
+    
+    "temperature": {
+	"format": "{icon} {temperatureC}°C",
+	"format-icons": [" ", " ", " "]
+    },
+
+    "memory": {
+        "format": "   {percentage}%"
+    },
+
+    // Center mosules configuration
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		"active": "󰄯",
+		"default": "<span color = '#adadad'>󰧞</span>"
+	}
+    },
+
+    // Right modules configuration
+    "pulseaudio": {
+	"format": "{icon}   {volume}",
+	"format-icons": [" ", " ", " "],
+	"format-muted": "    {volume}"
+    },
+
+    "network": {
+	"interval": 1,
+	"format": "    {essid}",
+	"format-disconnected": "󰖟   Disconnected"
+    },
+	
+    "battery": {
+	"interval": 1,
+	"format": "{icon}  <span color = '#d0cfcc'>{capacity}%</span>",
+	"format-charging": "{icon}<span color = '#d0cfcc'>󱐋  {capacity}%</span>",
+	"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+	"states": {
+		"warning": 20,
+		"critical": 10
+	}
+    },
+
+    "clock": {
+	"timezone": "America/Bogota",
+	"format": "   {:%H:%M}"	
+    }
+}
