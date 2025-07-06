@@ -1,0 +1,63 @@
+* {
+    font-family: ttf-adwaita-mono-nerd;
+    border: none;
+    color: #d0cfcc;
+    font-weight: bold;
+}
+    
+#waybar {
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 15px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 11px;
+	margin: 0px;
+}
+
+#custom-launcher {
+	font-size: 20px;
+	color: #5294E2;
+	margin-left: 10px;
+}
+
+#memory {
+	color: #d0cfcc;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#workspaces button {
+	background: transparent;
+	border-radius: 11px;
+	margin-right: 2px;
+}
+
+#workspaces button:hover {
+	box-shadow: none;
+}
+
+#pulseaudio {
+	margin-left: 10px;	
+}
+
+#battery.warning {
+	color: #f8c914;
+}
+
+#battery.critical {
+	color: #fc3c2f;
+}
+
+#battery.charging {
+	color: #37c35a;
+}
+
+#clock {
+	color: #d0cfcc;
+	font-weight: bold;
+	margin-right: 10px;
+}
