@@ -28,7 +28,7 @@ ln -sf "$repo_dir/kitty/kitty.conf"     "$config_dir/kitty/kitty.conf"
 ln -sf "$repo_dir/rofi/rofi.rasi"       "$config_dir/rofi/rofi.rasi"
 
 # Waybar
-ln -sf "$repo_dir/waybar/config.jsonc"       "$config_dir/waybar/config"
+ln -sf "$repo_dir/waybar/config"       "$config_dir/waybar/config"
 ln -sf "$repo_dir/waybar/style.css"       "$config_dir/waybar/style.css"
 
 echo "Done!"
