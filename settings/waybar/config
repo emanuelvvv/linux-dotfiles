@@ -7,7 +7,7 @@
     "spacing": 20, // Gaps between modules (px)
 
     // Choose the order of the modules
-    "modules-left": ["custom/launcher", "cpu", "temperature", "memory"],
+    "modules-left": ["custom/launcher", "cpu", "temperature", "memory", "disk"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "network", "battery", "clock"],
 
@@ -18,7 +18,7 @@
     },
     
     "cpu": {
-        "format": "   {usage}%"
+        "format": "   {usage}%"
     },
     
     "temperature": {
@@ -28,6 +28,10 @@
 
     "memory": {
         "format": "   {percentage}%"
+    },
+
+    "disk": {
+	"format": "   {used}"
     },
 
     // Center mosules configuration
