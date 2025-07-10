@@ -29,9 +29,10 @@
 }
 
 #workspaces button {
+	fontsize: 12px;
 	background: transparent;
 	border-radius: 11px;
-	margin-right: 2px;
+	margin-right: 1px;
 }
 
 #workspaces button:hover {
