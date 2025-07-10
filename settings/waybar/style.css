@@ -2,7 +2,7 @@
     font-family: ttf-adwaita-mono-nerd;
     border: none;
     color: #d0cfcc;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
     
 #waybar {
@@ -55,7 +55,5 @@
 }
 
 #clock {
-	color: #d0cfcc;
-	font-weight: bold;
 	margin-right: 10px;
 }
