@@ -2,7 +2,7 @@
     font-family: ttf-adwaita-mono-nerd;
     border: none;
     color: #d0cfcc;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
     
 #waybar {
