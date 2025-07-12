@@ -9,29 +9,29 @@
     // Choose the order of the modules
     "modules-left": ["custom/launcher", "cpu", "temperature", "memory", "disk"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["bluetooth", "pulseaudio", "network", "battery", "clock"],
 
     // Left modules configuration
     "custom/launcher": {
-	    "format": "󰣇 <span color = '#adadad'></span>",
+	    "format": "󰣇 ",
 	    "on-click": "rofi -show drun"
     },
     
     "cpu": {
-        "format": "   {usage}%"
+        "format": "   <span color = '#adadad'>{usage}%</span>"
     },
     
     "temperature": {
-	"format": "{icon} {temperatureC}°C",
+	"format": "{icon} <span color = '#adadad'>{temperatureC}°C</span>",
 	"format-icons": [" ", " ", " "]
     },
 
     "memory": {
-        "format": "   {percentage}%"
+        "format": "   <span color = '#adadad'>{percentage}%</span>"
     },
 
     "disk": {
-	"format": "   {used}"
+	"format": "   <span color = '#adadad'>{used}</span>"
     },
 
     // Center mosules configuration
@@ -44,22 +44,31 @@
     },
 
     // Right modules configuration
+    "bluetooth": {
+	"format": "  <span color = '#adadad'>{status}</span>",
+	"format-connected": "  <span color = '#adadad'>{device_alias}</span>"
+    },
+
     "pulseaudio": {
-	"format": "{icon}   {volume}",
-	"format-icons": [" ", " ", " "],
-	"format-muted": "    {volume}"
+	"format": "{icon}  <span color = '#adadad'>{volume}</span>",
+	"format-muted": "    <span color = '#adadad'>{volume}</span>",
+	"format-icons": {
+		"default": [" ", " ", "  "],
+		"headset": "󰋋 ",
+		"headphone": "󰋋 "
+	}
     },
 
     "network": {
 	"interval": 1,
-	"format": "    {essid}",
-	"format-disconnected": "󰖟   Disconnected"
+	"format": "    <span color = '#adadad'>{essid}</span>",
+	"format-disconnected": "󰖟   <span color = '#adadad'>Disconnected</span>"
     },
 	
     "battery": {
 	"interval": 1,
-	"format": "{icon}  <span color = '#d0cfcc'>{capacity}%</span>",
-	"format-charging": "{icon}<span color = '#d0cfcc'>󱐋  {capacity}%</span>",
+	"format": "{icon}  <span color = '#adadad'>{capacity}%</span>",
+	"format-charging": "{icon}<span color = '#adadad'>󱐋  {capacity}%</span>",
 	"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
 	"states": {
 		"warning": 20,
@@ -69,6 +78,6 @@
 
     "clock": {
 	"timezone": "America/Bogota",
-	"format": "   {:%H:%M}"	
+	"format": "󰥔   <span color = '#adadad'>{:%H:%M}</span>"	
     }
 }
