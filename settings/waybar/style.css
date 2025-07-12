@@ -25,7 +25,7 @@
 }
 
 #disk {
-	margin-right: 10px;
+	margin-right: 15px;
 }
 
 #workspaces button {
@@ -40,7 +40,7 @@
 }
 
 #bluetooth {
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 #battery.warning {
