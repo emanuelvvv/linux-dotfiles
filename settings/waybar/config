@@ -43,7 +43,7 @@
 		"3": []
 	},
 	"format-icons": {
-		"default": "<span color = '#adadad' font-size = '7000'></span>",
+		"default": "<span color = '#adadad' font-size = '6500'></span>",
 		"active": "<span font-size = '10000'></span>"
 	}
     },
