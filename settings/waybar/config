@@ -37,9 +37,14 @@
     // Center mosules configuration
     "hyprland/workspaces": {
 	"format": "{icon}",
+	"persistent-workspaces": {
+		"1": [],
+		"2": [],
+		"3": []
+	},
 	"format-icons": {
-		"active": "󰄯",
-		"default": "<span color = '#adadad'>󰧞</span>"
+		"default": "<span color = '#adadad' font-size = '7000'></span>",
+		"active": "<span font-size = '10000'></span>"
 	}
     },
 
