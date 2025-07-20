@@ -4,12 +4,12 @@
     "margin-top": 10,
     "margin-left": 20,
     "margin-right": 20,
-    "spacing": 20, // Gaps between modules (px)
+    "spacing": 25, // Gaps between modules (px)
 
     // Choose the order of the modules
     "modules-left": ["custom/launcher", "cpu", "temperature", "memory", "disk"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["bluetooth", "pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["bluetooth", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
     // Left modules configuration
     "custom/launcher": {
@@ -18,20 +18,20 @@
     },
     
     "cpu": {
-        "format": "   <span color = '#adadad'>{usage}%</span>"
+        "format": " <span color = '#adadad'>{usage}%</span>"
     },
     
     "temperature": {
-	"format": "{icon} <span color = '#adadad'>{temperatureC}°C</span>",
-	"format-icons": [" ", " ", " "]
+	"format": "{icon}<span color = '#adadad'>{temperatureC}°C</span>",
+	"format-icons": [" ", " ", " ", " ", " "]
     },
 
     "memory": {
-        "format": "   <span color = '#adadad'>{percentage}%</span>"
+        "format": " <span color = '#adadad'>{percentage}%</span>"
     },
 
     "disk": {
-	"format": "   <span color = '#adadad'>{used}</span>"
+	"format": " <span color = '#adadad'>{percentage_used}%</span>"
     },
 
     // Center mosules configuration
@@ -43,37 +43,37 @@
 		"3": []
 	},
 	"format-icons": {
-		"default": "<span color = '#adadad' font-size = '6500'></span>",
+		"default": "<span color = '#adadad' font-size = '6600'></span>",
 		"active": "<span font-size = '10000'></span>"
 	}
     },
 
     // Right modules configuration
     "bluetooth": {
-	"format": "  <span color = '#adadad'>{status}</span>",
-	"format-connected": "  <span color = '#adadad'>{device_alias}</span>"
+	"format": " <span color = '#adadad'>{status}</span>",
+	"format-connected": " <span color = '#adadad'>{device_alias}</span>"
     },
 
     "pulseaudio": {
-	"format": "{icon}  <span color = '#adadad'>{volume}</span>",
-	"format-muted": "    <span color = '#adadad'>{volume}</span>",
+	"format": "{icon}<span color = '#adadad'>{volume}</span>",
+	"format-muted": "  <span color = '#adadad'>{volume}</span>",
 	"format-icons": {
-		"default": [" ", " ", "  "],
-		"headset": "󰋋 ",
-		"headphone": "󰋋 "
+		"default": ["  ", "  ", "  "],
+		"headset": "󰋋  ",
+		"headphone": "󰋋  "
 	}
     },
 
     "network": {
 	"interval": 1,
-	"format": "    <span color = '#adadad'>{essid}</span>",
-	"format-disconnected": "󰖟   <span color = '#adadad'>Disconnected</span>"
+	"format": "  <span color = '#adadad'>{essid}</span>",
+	"format-disconnected": "󰖟  <span color = '#adadad'>Disconnected</span>"
     },
 	
     "battery": {
 	"interval": 1,
-	"format": "{icon}  <span color = '#adadad'>{capacity}%</span>",
-	"format-charging": "{icon}<span color = '#adadad'>󱐋  {capacity}%</span>",
+	"format": "{icon} <span color = '#adadad'>{capacity}%</span>",
+	"format-charging": "{icon}<span color = '#adadad'>󱐋 {capacity}%</span>",
 	"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
 	"states": {
 		"warning": 20,
@@ -83,6 +83,11 @@
 
     "clock": {
 	"timezone": "America/Bogota",
-	"format": "󰥔   <span color = '#adadad'>{:%H:%M}</span>"	
+	"format": "󰥔 <span color = '#adadad'>{:%H:%M}</span>"	
+    },
+
+    "custom/power": {
+	"format": "",
+	"on-click": "poweroff"
     }
 }

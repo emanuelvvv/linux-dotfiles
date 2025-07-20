@@ -1,5 +1,5 @@
 * {
-    font-family: ttf-adwaita-mono-nerd;
+    font-family: AdwaitaMono Nerd Font;
     border: none;
     color: #d0cfcc;
     font-weight: bold;
@@ -54,6 +54,6 @@
 	color: #37c35a;
 }
 
-#clock {
+#custom-power {
 	margin-right: 15px;
 }
