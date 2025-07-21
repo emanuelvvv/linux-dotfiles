@@ -18,7 +18,7 @@
     },
 
     "custom/distro": {
-	"format": "<span color = '#adadad'>アーチリナックス</span>",
+	"format": "<span color = '#333333'>アーチリナックス</span>",
 	"on-click": "kitty"
     },
     
@@ -96,7 +96,7 @@
     },
 
     "custom/power": {
-	"format": "",
+	"format": "<span color = '#333333'></span>",
 	"on-click": "poweroff"
     }
 }

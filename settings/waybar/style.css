@@ -23,7 +23,7 @@
 	font-size: 24px;
 	padding-left: 15px;
 	padding-right: 5px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(173, 173, 173, 1);
 	border-radius: 11px 0px 0px 11px;
 	
 }
@@ -32,7 +32,7 @@
 	margin-top: 4px;
         margin-bottom: 4px;
 	margin-right: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(173, 173, 173, 1);
 	padding-right: 15px;
 	border-radius: 0px 11px 11px 0px;
 }
@@ -151,8 +151,8 @@
 
 #custom-power {
 	margin: 4px;
-	background-color: rgba(0, 0, 0, 0.4);
-	padding-left: 13px;
+	background-color: rgba(173, 173, 173, 1);
+	padding-left: 12px;
 	padding-right: 15px;
 	border-radius: 11px;
 }
