@@ -4,17 +4,22 @@
     "margin-top": 10,
     "margin-left": 20,
     "margin-right": 20,
-    "spacing": 25, // Gaps between modules (px)
+    "spacing": 0, // Gaps between modules (px)
 
     // Choose the order of the modules
-    "modules-left": ["custom/launcher", "cpu", "temperature", "memory", "disk"],
+    "modules-left": ["custom/launcher", "custom/distro", "cpu", "custom/gpu", "temperature", "memory", "disk"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["bluetooth", "pulseaudio", "network", "battery", "clock", "custom/power"],
+    "modules-right": ["bluetooth", "hyprland/language", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
     // Left modules configuration
     "custom/launcher": {
-	    "format": "󰣇 ",
-	    "on-click": "rofi -show drun"
+	"format": "<span color = '#1793d1'>󰣇 </span>",
+	"on-click": "rofi -show drun"
+    },
+
+    "custom/distro": {
+	"format": "<span color = '#adadad'>アーチリナックス</span>",
+	"on-click": "kitty"
     },
     
     "cpu": {
@@ -79,6 +84,10 @@
 		"warning": 20,
 		"critical": 10
 	}
+    },
+
+    "hyprland/language": {
+	"format": "<span color = '#adadad'>{short}</span>"
     },
 
     "clock": {

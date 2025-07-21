@@ -10,28 +10,68 @@
 	border-radius: 15px;
 }
 
-.modules-left,
-.modules-center,
-.modules-right {
+.modules-center {
 	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 11px;
 	margin: 4px;
 }
 
 #custom-launcher {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
 	font-size: 24px;
-	color: #1793d1;
-	margin-left: 15px;
+	padding-left: 15px;
+	padding-right: 5px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 11px 0px 0px 11px;
+	
+}
+
+#custom-distro {
+	margin-top: 4px;
+        margin-bottom: 4px;
+	margin-right: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+	padding-right: 15px;
+	border-radius: 0px 11px 11px 0px;
+}
+
+#cpu {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+	padding-left: 15px;
+        padding-right: 20px;
+	border-radius: 11px 0px 0px 11px;
+}
+
+#temperature {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+	padding-right: 20px;
+}
+
+#memory {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-right: 20px;
 }
 
 #disk {
-	margin-right: 15px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-right: 15px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0px 11px 11px 0px;
 }
 
 #workspaces button {
 	background: rgba(0, 0, 0, 0);
 	border-radius: 15px;
-	margin-right: 3px;
+	padding-right: 12px;
 }
 
 #workspaces button:hover {
@@ -39,21 +79,80 @@
 }
 
 #bluetooth {
-	margin-left: 15px;
+	margin: 4px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 11px;
+}
+
+#language {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-right: 20px;
+	border-radius: 11px 0px 0px 11px;
+	padding-left: 15px;
+}
+
+#pulseaudio {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-right: 20px;
+}
+
+#network {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-right: 20px;
+}
+
+#battery {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-right: 20px;
 }
 
 #battery.warning {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-right: 20px;
 	color: #f8c914;
 }
 
 #battery.critical {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-right: 20px;
 	color: #fc3c2f;
 }
 
 #battery.charging {
-	color: #37c35a;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #37c35a;
+        padding-right: 20px;
+}
+
+#clock {
+	margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0px 11px 11px 0px;
+	padding-right: 15px;
 }
 
 #custom-power {
-	margin-right: 15px;
+	margin: 4px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-left: 13px;
+	padding-right: 15px;
+	border-radius: 11px;
 }
