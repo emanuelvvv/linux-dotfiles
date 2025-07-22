@@ -1,5 +1,5 @@
 * {
-    font-family: AdwaitaMono Nerd Font;
+    font-family: Adwaita-Mono;
     border: none;
     color: #d0cfcc;
     font-weight: bold;
@@ -22,8 +22,7 @@
 	margin-left: 4px;
 	font-size: 24px;
 	padding-left: 15px;
-	padding-right: 5px;
-	background-color: rgba(173, 173, 173, 1);
+	background-color: rgba(208, 207, 204, 0.6);
 	border-radius: 11px 0px 0px 11px;
 	
 }
@@ -31,10 +30,17 @@
 #custom-distro {
 	margin-top: 4px;
         margin-bottom: 4px;
-	margin-right: 4px;
-        background-color: rgba(173, 173, 173, 1);
+        background-color: rgba(208, 207, 204, 0.6);
 	padding-right: 15px;
 	border-radius: 0px 11px 11px 0px;
+}
+
+#user {
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 4px;
+	border-radius: 11px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #cpu {
@@ -68,10 +74,16 @@
 	border-radius: 0px 11px 11px 0px;
 }
 
+#workspaces button label {
+        color: #666666;
+}
+
+#workspaces button.active label { 
+        color: #d0cfcc;
+}
+
 #workspaces button {
 	background: rgba(0, 0, 0, 0);
-	border-radius: 15px;
-	padding-right: 12px;
 }
 
 #workspaces button:hover {
@@ -79,20 +91,13 @@
 }
 
 #bluetooth {
-	margin: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-right: 4px;
 	background-color: rgba(0, 0, 0, 0.4);
 	padding-left: 15px;
 	padding-right: 15px;
 	border-radius: 11px;
-}
-
-#language {
-        margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding-right: 20px;
-	border-radius: 11px 0px 0px 11px;
-	padding-left: 15px;
 }
 
 #pulseaudio {
@@ -100,6 +105,8 @@
         margin-bottom: 4px;
         background-color: rgba(0, 0, 0, 0.4);
         padding-right: 20px;
+	border-radius: 11px 0px 0px 11px;
+	padding-left: 15px;
 }
 
 #network {
@@ -114,6 +121,8 @@
         margin-bottom: 4px;
         background-color: rgba(0, 0, 0, 0.4);
         padding-right: 20px;
+	padding-right: 15px;
+        border-radius: 0px 11px 11px 0px;
 }
 
 #battery.warning {
@@ -122,6 +131,8 @@
         background-color: rgba(0, 0, 0, 0.4);
         padding-right: 20px;
 	color: #f8c914;
+	padding-right: 15px;
+        border-radius: 0px 11px 11px 0px;
 }
 
 #battery.critical {
@@ -130,15 +141,27 @@
         background-color: rgba(0, 0, 0, 0.4);
         padding-right: 20px;
 	color: #fc3c2f;
+	padding-right: 15px;
+        border-radius: 0px 11px 11px 0px;
 }
 
 #battery.charging {
         margin-top: 4px;
         margin-bottom: 4px;
-        margin-left: 4px;
         background-color: rgba(0, 0, 0, 0.4);
         color: #37c35a;
+        padding-right: 15px;
+	border-radius: 0px 11px 11px 0px;
+}
+
+#language {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
         padding-right: 20px;
+        border-radius: 11px 0px 0px 11px;
+        padding-left: 15px;
 }
 
 #clock {
@@ -151,7 +174,7 @@
 
 #custom-power {
 	margin: 4px;
-	background-color: rgba(173, 173, 173, 1);
+	background-color: rgba(208, 207, 204, 0.6);
 	padding-left: 12px;
 	padding-right: 15px;
 	border-radius: 11px;
