@@ -9,17 +9,19 @@
     // Choose the order of the modules
     "modules-left": ["custom/launcher", "custom/distro", "user", "cpu", "custom/gpu", "temperature", "memory", "disk"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["bluetooth", "pulseaudio", "network", "battery", "hyprland/language", "clock", "custom/power"],
+    "modules-right": ["bluetooth", "pulseaudio", "network", "battery", "clock", "custom/power"],
 
     // Left modules configuration
     "custom/launcher": {
 	"format": "<span color = '#333333'>󰣇 </span>",
-	"on-click": "rofi -show drun"
+	"on-click": "rofi -show drun",
+	"tooltip": false
     },
 
     "custom/distro": {
 	"format": "<span color = '#333333'>アーチリナックス</span>",
-	"on-click": "kitty"
+	"on-click": "kitty",
+	"tooltip": false
     },
     
     "user": {
@@ -32,7 +34,8 @@
     
     "temperature": {
 	"format": "{icon}<span color = '#adadad'>{temperatureC}°C</span>",
-	"format-icons": [" ", " ", " ", " ", " "]
+	"format-icons": [" ", " ", " ", " ", " "],
+	"tooltip": false
     },
 
     "memory": {
@@ -52,7 +55,7 @@
     "bluetooth": {
 	"format-no-controller": "  <span color = '#666666'>{status}</span>",
 	"format": "  <span color = '#adadad'>{status}</span>",
-	"format-connected": "  <span color = '#0082fc'>{device_alias}</span>"
+	"format-connected": "  <span color = '#adadad'>{device_alias}</span>"
     },
 
     "pulseaudio": {
@@ -68,7 +71,8 @@
     "network": {
 	"interval": 1,
 	"format": "   <span color = '#adadad'>{essid}</span>",
-	"format-disconnected": "󰖟  <span color = '#666666'>Disconnected</span>"
+	"format-disconnected": "󰖟  <span color = '#666666'>Disconnected</span>",
+	"tooltip": false
     },
 	
     "battery": {
@@ -82,17 +86,15 @@
 	}
     },
 
-    "hyprland/language": {
-	"format": "<span color = '#adadad'>{short}</span>"
-    },
-
     "clock": {
 	"timezone": "America/Bogota",
-	"format": "󰥔  <span color = '#adadad'>{:%H:%M}</span>"	
+	"format": "󰥔  <span color = '#adadad'>{:%H:%M}</span>",
+	"tooltip": false
     },
 
     "custom/power": {
 	"format": "<span color = '#333333'></span>",
-	"on-click": "poweroff"
+	"on-click": "poweroff",
+	"tooltip": false
     }
 }

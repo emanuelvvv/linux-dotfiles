@@ -122,7 +122,6 @@
         background-color: rgba(0, 0, 0, 0.4);
         padding-right: 20px;
 	padding-right: 15px;
-        border-radius: 0px 11px 11px 0px;
 }
 
 #battery.warning {
@@ -132,7 +131,6 @@
         padding-right: 20px;
 	color: #f8c914;
 	padding-right: 15px;
-        border-radius: 0px 11px 11px 0px;
 }
 
 #battery.critical {
@@ -142,7 +140,6 @@
         padding-right: 20px;
 	color: #fc3c2f;
 	padding-right: 15px;
-        border-radius: 0px 11px 11px 0px;
 }
 
 #battery.charging {
@@ -151,17 +148,6 @@
         background-color: rgba(0, 0, 0, 0.4);
         color: #37c35a;
         padding-right: 15px;
-	border-radius: 0px 11px 11px 0px;
-}
-
-#language {
-        margin-top: 4px;
-        margin-bottom: 4px;
-        margin-left: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding-right: 20px;
-        border-radius: 11px 0px 0px 11px;
-        padding-left: 15px;
 }
 
 #clock {
