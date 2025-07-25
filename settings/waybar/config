@@ -29,7 +29,7 @@
     },
 
     "cpu": {
-        "format": "   <span color = '#adadad'>{usage}%</span>"
+        "format": "   <span color = '#adadad'>{load}</span>"
     },
     
     "temperature": {
@@ -39,11 +39,11 @@
     },
 
     "memory": {
-        "format": "   <span color = '#adadad'>{percentage}%</span>"
+        "format": "   <span color = '#adadad'>{used}GiB</span>"
     },
 
     "disk": {
-	"format": "  <span color = '#adadad'>{percentage_used}%</span>"
+	"format": "  <span color = '#adadad'>{used}</span>"
     },
 
     // Center mosules configuration
