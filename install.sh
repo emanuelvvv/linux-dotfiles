@@ -20,7 +20,10 @@ ln -sf "$repo_dir/settings/hyprland/hyprland.conf"       "$config_dir/hypr/hyprl
 ln -sf "$repo_dir/settings/hyprland/hyprpaper.conf"      "$config_dir/hypr/hyprpaper.conf"
 
 # Kitty
-ln -sf "$repo_dir/settings/kitty/kitty.conf"     "$config_dir/kitty/kitty.conf"
+ln -sf "$repo_dir/settings/kitty/kitty.conf"       "$config_dir/kitty/kitty.conf"
+
+# Powerlevel10k
+ln -sf "$repo_dir/settings/powerlevel10k/.p10k.zsh"       "$HOME/.p10k.zsh"
 
 # Rofi
 ln -sf "$repo_dir/settings/rofi/config.rasi"       "$config_dir/rofi/config.rasi"
@@ -28,5 +31,8 @@ ln -sf "$repo_dir/settings/rofi/config.rasi"       "$config_dir/rofi/config.rasi
 # Waybar
 ln -sf "$repo_dir/settings/waybar/config"       "$config_dir/waybar/config"
 ln -sf "$repo_dir/settings/waybar/style.css"       "$config_dir/waybar/style.css"
+
+# zsh
+ln -sf "$repo_dir/settings/zsh/.zshrc"       "$HOME/.zshrc"
 
 echo "Done."
