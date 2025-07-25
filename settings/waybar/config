@@ -39,7 +39,8 @@
     },
 
     "memory": {
-        "format": "   <span color = '#adadad'>{used}GiB</span>"
+        "format": "   <span color = '#adadad'>{used}GiB</span>",
+	"tooltip": false
     },
 
     "disk": {
