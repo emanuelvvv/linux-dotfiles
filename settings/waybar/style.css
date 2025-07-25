@@ -6,71 +6,58 @@
 }
     
 #waybar {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0);
 	border-radius: 15px;
 }
 
 .modules-center {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: #333333;
 	border-radius: 11px;
-	margin: 4px;
 }
 
 #custom-launcher {
-	margin-top: 4px;
-	margin-bottom: 4px;
-	margin-left: 4px;
 	font-size: 24px;
 	padding-left: 15px;
-	background-color: rgba(208, 207, 204, 0.6);
+	background-color: #d0cfcc;
 	border-radius: 11px 0px 0px 11px;
 	
 }
 
 #custom-distro {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(208, 207, 204, 0.6);
+	margin-right: 5px;
+        background-color: #d0cfcc;
 	padding-right: 15px;
 	border-radius: 0px 11px 11px 0px;
 }
 
 #user {
-	background-color: rgba(0, 0, 0, 0.4);
-	margin: 4px;
+	background-color: #333333;
+	margin-right: 5px;
 	border-radius: 11px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
 #cpu {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
 	padding-left: 15px;
         padding-right: 20px;
 	border-radius: 11px 0px 0px 11px;
 }
 
 #temperature {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
 	padding-right: 20px;
 }
 
 #memory {
-	margin-top: 4px;
-	margin-bottom: 4px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: #333333;
 	padding-right: 20px;
 }
 
 #disk {
-	margin-top: 4px;
-	margin-bottom: 4px;
 	padding-right: 15px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: #333333;
 	border-radius: 0px 11px 11px 0px;
 }
 
@@ -91,76 +78,60 @@
 }
 
 #bluetooth {
-	margin-top: 4px;
-	margin-bottom: 4px;
-	margin-right: 4px;
-	background-color: rgba(0, 0, 0, 0.4);
+	margin-right: 5px;
+	background-color: #333333;
 	padding-left: 15px;
 	padding-right: 15px;
 	border-radius: 11px;
 }
 
 #pulseaudio {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
         padding-right: 20px;
 	border-radius: 11px 0px 0px 11px;
 	padding-left: 15px;
 }
 
 #network {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
         padding-right: 20px;
 }
 
 #battery {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
         padding-right: 20px;
 	padding-right: 15px;
 }
 
 #battery.warning {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
         padding-right: 20px;
 	color: #f8c914;
 	padding-right: 15px;
 }
 
 #battery.critical {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
         padding-right: 20px;
 	color: #fc3c2f;
 	padding-right: 15px;
 }
 
 #battery.charging {
-        margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
         color: #37c35a;
         padding-right: 15px;
 }
 
 #clock {
-	margin-top: 4px;
-        margin-bottom: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #333333;
 	border-radius: 0px 11px 11px 0px;
 	padding-right: 15px;
 }
 
 #custom-power {
-	margin: 4px;
-	background-color: rgba(208, 207, 204, 0.6);
+	margin-left: 5px;
+	background-color: #d0cfcc;
 	padding-left: 12px;
 	padding-right: 15px;
 	border-radius: 11px;

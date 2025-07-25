@@ -55,7 +55,7 @@
     "bluetooth": {
 	"format-no-controller": "  <span color = '#666666'>{status}</span>",
 	"format": "  <span color = '#adadad'>{status}</span>",
-	"format-connected": "  <span color = '#adadad'>{device_alias}</span>"
+	"format-connected": "  <span color = '#adadad'>{num_connections}</span>"
     },
 
     "pulseaudio": {
