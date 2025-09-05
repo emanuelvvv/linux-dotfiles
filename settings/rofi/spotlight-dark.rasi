@@ -24,7 +24,7 @@ window {
 
     location:       center;
     width:          400;
-    height:         261;
+    height:         189;
     border-radius:  15;
 }
 
