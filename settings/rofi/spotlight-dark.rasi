@@ -1,7 +1,7 @@
 * {
     
     font: "Adwaita-Mono 12";
-    bg0:    rgb(0, 0, 0, 0.4);
+    bg0:    #333333;
     bg1:    #7E7E7E80;
     bg2:    #7E7E7E80;
 
